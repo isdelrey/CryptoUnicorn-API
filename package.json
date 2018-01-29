@@ -7,7 +7,7 @@
     "build": "./node_modules/.bin/babel in -d out",
     "start": "node out/index.js",
     "ready": "npm run build && npm start",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "./node_modules/.bin/babel in -d out"
   },
   "author": "Ivo Sequeros del Rey",
   "license": "Apache-2.0",
