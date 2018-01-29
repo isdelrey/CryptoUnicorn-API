@@ -4,7 +4,7 @@
   "description": "",
   "main": "out/index.js",
   "scripts": {
-    "build": "babel in -d out",
+    "build": "./node_modules/.bin/babel in -d out",
     "start": "node out/index.js",
     "ready": "npm run build && npm start",
     "heroku-postbuild": "npm run build"
