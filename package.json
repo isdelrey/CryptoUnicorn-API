@@ -7,14 +7,10 @@
     "build": "./node_modules/.bin/babel in -d out",
     "start": "node out/index.js",
     "ready": "npm run build && npm start",
-    "heroku-postbuild": "./node_modules/.bin/babel in -d out"
+    "heroku-postbuild": "npm run build"
   },
   "author": "Ivo Sequeros del Rey",
   "license": "Apache-2.0",
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.6.1"
-  },
   "dependencies": {
     "cookie-parser": "^1.4.3",
     "passport": "^0.4.0",
@@ -22,6 +18,8 @@
     "passport-local": "^1.0.0",
     "passport-restify": "^1.0.1",
     "restify": "^6.3.4",
-    "restify-cookies": "^0.2.2"
+    "restify-cookies": "^0.2.2",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
   }
 }
