@@ -6,7 +6,8 @@
   "scripts": {
     "build": "babel in -d out",
     "start": "node out/index.js",
-    "ready": "npm run build && npm start"
+    "ready": "npm run build && npm start",
+    "heroku-postbuild": "npm run build"
   },
   "author": "Ivo Sequeros del Rey",
   "license": "Apache-2.0",
