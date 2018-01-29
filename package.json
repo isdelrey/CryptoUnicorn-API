@@ -1,0 +1,26 @@
+{
+  "name": "cryptounicorn-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "out/index.js",
+  "scripts": {
+    "build": "babel in -d out",
+    "start": "node out/index.js",
+    "ready": "npm run build && npm start"
+  },
+  "author": "Ivo Sequeros del Rey",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.3",
+    "passport": "^0.4.0",
+    "passport-http": "^0.3.0",
+    "passport-local": "^1.0.0",
+    "passport-restify": "^1.0.1",
+    "restify": "^6.3.4",
+    "restify-cookies": "^0.2.2"
+  }
+}
