@@ -12,14 +12,23 @@
   "author": "Ivo Sequeros del Rey",
   "license": "Apache-2.0",
   "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2017": "^6.24.1",
+    "babel-runtime": "^6.26.0",
     "cookie-parser": "^1.4.3",
+    "mongoose": "^5.0.2",
+    "object-hash": "^1.2.0",
     "passport": "^0.4.0",
     "passport-http": "^0.3.0",
+    "passport-http-bearer": "^1.0.1",
     "passport-local": "^1.0.0",
     "passport-restify": "^1.0.1",
     "restify": "^6.3.4",
+    "restify-await-promise": "^1.0.2",
     "restify-cookies": "^0.2.2",
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.6.1"
+    "restify-errors": "^5.0.0"
   }
 }
