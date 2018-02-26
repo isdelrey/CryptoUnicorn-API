@@ -52,10 +52,17 @@ actions.getSetup = async (req, res, next) => {
   next();
 }
 
+
 actions.setSetup = async (req, res, next) => {
   await User.findOneAndUpdate({ email: req.user.email }, { setup: req.body.setup }).catch(err => {
     throw err
   })
+  res.send({ok: true});
+  next();
+}
+
+actions.setStream = async (req, res, next) => {
+  /* TODO */
   res.send({ok: true});
   next();
 }

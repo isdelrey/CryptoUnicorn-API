@@ -9,6 +9,7 @@ export default {
       .then(user => done(null, user))
       .catch(err => console.log(err))
     },
+
   bearer: (token, done) => {
     if(token == null) {
       done(null, false)
